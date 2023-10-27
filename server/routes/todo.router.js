@@ -36,6 +36,33 @@ router.post('/', (req, res) => {
 
 // PUT
 
+router.put('/:id', (req,res) => {
+    console.log('PUT /todo', req.params);
+    const queryText = `UPDATE "tasklist" SET "complete" = NOT "complete" WHERE "id" = $1;`;
+    pool.query(queryText, [req.params.id])
+        .then((result) => {
+            res.sendStatus(200);
+        })
+        .catch((error) => {
+            console.log('Error in PUT', error);
+            res.sendStatus(500);
+        });
+});
+
+
 // DELETE
+
+router.delete('/:id', (req, res) => {
+    console.log('DELETE /todo', req.params);
+    let queryText = `DELETE FROM "tasklist" WHERE "id" = $1;`;
+    pool.query(queryText, [req.params.id])
+    .then((result) => {
+        res.sendStatus(200);
+    })
+    .catch((error) => {
+        console.log('Error in delete', error);
+        res.sendStatus(500);
+    });
+});
 
 module.exports = router;

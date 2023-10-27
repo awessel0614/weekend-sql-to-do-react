@@ -2,8 +2,9 @@ import React from 'react';
 import {useState, useEffect} from 'react';
 import axios from 'axios';
 import './App.css';
-import ToDoItem from '../ToDoItem/ToDoItem.jsx';
+//import ToDoItem from '../ToDoItem/ToDoItem.jsx';
 import ToDoForm from '../ToDoForm/ToDoForm.jsx';
+import ToDoList from '../ToDoList/ToDoList.jsx';
 
 function App () {
   
@@ -32,9 +33,7 @@ useEffect(() => {
       <h1>TO DO APP</h1>
       <ToDoForm getToDoList={getToDoList}/>
       <main>
-        {
-          toDoList.map(item => <ToDoItem key={item.id} item={item} />)
-        }
+       <ToDoList getToDoList={getToDoList} toDoList={toDoList}/>
       </main>
     </div>
   );

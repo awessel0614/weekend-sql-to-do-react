@@ -26,7 +26,6 @@ function ToDoForm(props) {
         <h2>Add a new chore to your list!</h2>
         <form onSubmit={sendToDoToServer}>
             Chore to add: <input value={toDo} onChange={(e) => setToDo(e.target.value)}/>
-            <p>{toDo}</p>
             <button>Submit</button>
         </form>
         </>
