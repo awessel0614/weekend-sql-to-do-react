@@ -3,10 +3,10 @@ import axios from 'axios';
 function ToDoItem(props) {
 
     console.log(props);
-    console.log(props.item.id);
+    console.log(props.id);
 
     const toggleComplete = () => {
-        axios.put(`/todo/${props.item.id}`).then((reponse) => {
+        axios.put(`/todo/${props.id}`).then((reponse) => {
             props.getToDoList();
         }).catch((error) => {
             console.error(error);
@@ -16,7 +16,7 @@ function ToDoItem(props) {
 
     const deleteItem = () => {
 
-        axios.delete(`/todo/${props.item.id}`)
+        axios.delete(`/todo/${props.id}`)
             .then(response => {
                 props.getToDoList();
             })

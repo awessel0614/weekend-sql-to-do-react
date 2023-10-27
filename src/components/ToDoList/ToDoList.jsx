@@ -7,7 +7,7 @@ function ToDoList(props) {
         <h1>To Do List:</h1>
         <ul>
             {
-                props.toDoList.map(item => <ToDoItem key={item.id} item={item} complete={item.complete} getToDoList={props.getToDoList}/>)
+                props.toDoList.map(item => <ToDoItem id={item.id} item={item} complete={item.complete} getToDoList={props.getToDoList}/>)
             }
         </ul>
         </>
