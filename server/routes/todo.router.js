@@ -19,6 +19,21 @@ router.get('/', (req, res) => {
 
 // POST
 
+router.post('/', (req, res) => {
+    const toDo =req.body;
+    const sqlText = `INSERT INTO tasklist (task)
+                     VALUES ($1)`;
+    pool.query(sqlText, [toDo.task])
+        .then((result) => {
+            console.log(`Added to do to the database`, toDo);
+            res.sendStatus(201);
+        }).catch((error) => {
+            console.log(`Error making database query ${sqlText}`, error);
+            res.sendStatus(500);
+        })
+
+})
+
 // PUT
 
 // DELETE
