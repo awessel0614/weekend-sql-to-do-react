@@ -30,7 +30,7 @@ useEffect(() => {
 
   return (
     <div>
-      <h1>TO DO APP</h1>
+      <h1>To Do App</h1>
       <ToDoForm getToDoList={getToDoList}/>
       <main>
        <ToDoList getToDoList={getToDoList} toDoList={toDoList}/>

@@ -1,4 +1,5 @@
 import axios from 'axios';
+import './ToDoItem.css';
 
 function ToDoItem(props) {
 
@@ -28,7 +29,7 @@ function ToDoItem(props) {
 
     return (
         <>
-        <li>{props.item.task}</li>
+        <li className={props.complete ? 'highlight' : 'normal'}>{props.item.task}</li>
         <button onClick={toggleComplete}>{props.complete ? 'Completed!' : 'Click to Complete!'}</button>
         <button id="delete-button" onClick={deleteItem}>Delete</button>
         </>

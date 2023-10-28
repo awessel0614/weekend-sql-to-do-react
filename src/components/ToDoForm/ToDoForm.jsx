@@ -2,7 +2,7 @@ import { useState } from 'react';
 import axios from 'axios';
 
 function ToDoForm(props) {
-    const [toDo, setToDo] = useState('testing');
+    const [toDo, setToDo] = useState('');
 
     const sendToDoToServer = (e) => {
         e.preventDefault();

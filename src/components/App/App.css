@@ -21,3 +21,8 @@
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
 }
+
+h1 {
+  color: #444248;
+  font-size: 100px;
+}
