@@ -16,11 +16,11 @@
     height: 36px;
     width: 100px;
     border-radius: 15px;
-    border-color: rgb(136, 235, 136);
+    color: rgb(107, 31, 31);
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: small;
     background-color: #e18b6c;
-    color: rgb(136, 235, 136)
+    color: rgb(107, 31, 31);
 }
 
 #delete-button {
