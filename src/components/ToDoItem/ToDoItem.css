@@ -1,8 +1,35 @@
 .highlight {
     color: lightgreen;
     display: table;
+    text-decoration: line-through;
 }
 
 .normal {
-    color: black;
+    color: rgb(63, 58, 58);
+    display: flex;
+    
+    /* max-width: fit-content;
+    margin: 0 auto; */
+}
+
+#complete-button {
+    height: 36px;
+    width: 100px;
+    border-radius: 15px;
+    border-color: rgb(136, 235, 136);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: small;
+    background-color: #e18b6c;
+    color: rgb(136, 235, 136)
+}
+
+#delete-button {
+    height: 30px;
+    width: 100px;
+    border-radius: 15px;
+    border-color: rgb(107, 31, 31);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: large;
+    background-color: #e18b6c;
+    color: rgb(107, 31, 31);
 }

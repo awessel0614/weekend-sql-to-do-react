@@ -1,0 +1,26 @@
+
+#input-field {
+    height: 50px;
+    width: 200px;
+    border-radius: 15px;
+    border-color: rgb(136, 235, 136);
+    font-size: larger;
+    text-align: center;
+}
+
+#submit-button {
+    height: 57px;
+    width: 100px;
+    border-radius: 15px;
+    border-color: rgb(136, 235, 136);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: large;
+    background-color: #e18b6c;
+    color: rgb(136, 235, 136)
+    
+    
+}
+
+h2 {
+    color: rgb(63, 58, 58);
+}

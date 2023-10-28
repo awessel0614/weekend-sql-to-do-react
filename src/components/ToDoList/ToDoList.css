@@ -3,3 +3,12 @@
     font-size: 50px;
     text-decoration: underline;
 }
+
+#list-items {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    font-size: 27px;
+}

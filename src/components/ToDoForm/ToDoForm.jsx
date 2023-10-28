@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import axios from 'axios';
+import './ToDoForm.css';
 
 function ToDoForm(props) {
     const [toDo, setToDo] = useState('');
@@ -25,8 +26,8 @@ function ToDoForm(props) {
         <>
         <h2>Add a new chore to your list!</h2>
         <form onSubmit={sendToDoToServer}>
-            Chore to add: <input value={toDo} onChange={(e) => setToDo(e.target.value)}/>
-            <button>Submit</button>
+            <input id="input-field" value={toDo} placeholder="e.g. make bed" onChange={(e) => setToDo(e.target.value)}/>
+            <button id="submit-button">submit</button>
         </form>
         </>
     )

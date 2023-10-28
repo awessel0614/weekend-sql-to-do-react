@@ -6,7 +6,7 @@ function ToDoList(props) {
     return(
         <>
         <h1 id="todolist">List:</h1>
-        <ul>
+        <ul id="list-items">
             {
                 props.toDoList.map(item => <ToDoItem id={item.id} item={item} complete={item.complete} getToDoList={props.getToDoList}/>)
             }

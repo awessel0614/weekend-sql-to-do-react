@@ -29,9 +29,9 @@ function ToDoItem(props) {
 
     return (
         <>
-        <li className={props.complete ? 'highlight' : 'normal'}>{props.item.task}</li>
-        <button onClick={toggleComplete}>{props.complete ? 'Completed!' : 'Click to Complete!'}</button>
-        <button id="delete-button" onClick={deleteItem}>Delete</button>
+        <li className={props.complete ? 'highlight' : 'normal'}>{props.item.task}
+        <button id="complete-button" onClick={toggleComplete}>{props.complete ? 'Completed!' : 'Click to Complete!'}</button>
+        <button id="delete-button" onClick={deleteItem}>Delete</button></li>
         </>
     )
 
