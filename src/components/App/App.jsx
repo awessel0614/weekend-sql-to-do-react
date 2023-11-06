@@ -2,7 +2,6 @@ import React from 'react';
 import {useState, useEffect} from 'react';
 import axios from 'axios';
 import './App.css';
-//import ToDoItem from '../ToDoItem/ToDoItem.jsx';
 import ToDoForm from '../ToDoForm/ToDoForm.jsx';
 import ToDoList from '../ToDoList/ToDoList.jsx';
 import Container from '@mui/material/Container';
@@ -26,8 +25,6 @@ function App () {
 useEffect(() => {
   getToDoList();
 }, []);
-
-
 
 
   return (

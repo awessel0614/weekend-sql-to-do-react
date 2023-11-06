@@ -7,9 +7,6 @@
 .normal {
     color: rgb(63, 58, 58);
     display: flex;
-    
-    /* max-width: fit-content;
-    margin: 0 auto; */
 }
 
 #complete-button {
@@ -37,3 +34,4 @@
 h3 {
     color: rgb(85, 81, 81);
 }
+

@@ -20,9 +20,9 @@ router.get('/', (req, res) => {
 // POST
 
 router.post('/', (req, res) => {
-    const toDo =req.body;
-    const sqlText = `INSERT INTO tasklist (task)
-                     VALUES ($1)`;
+    const toDo = req.body;
+    const sqlText = `INSERT INTO "tasklist" ("task")
+                     VALUES ($1);`;
     pool.query(sqlText, [toDo.task])
         .then((result) => {
             console.log(`Added to do to the database`, toDo);
@@ -49,12 +49,6 @@ router.put('/:id', (req,res) => {
         });
 });
 
-// //PUT for editing the todo
-
-// router.put('/:id', (req, res) => {
-//     console.log('PUT edit /todo', req.params);
-//     const queryText = ``
-// })
 
 
 // DELETE

@@ -14,8 +14,8 @@ Installation:
 
 
 1. Create a database named weekend-to-do-app
-2. The queries in the database.sql file are set up to create all necessary tables and populate the needed data to allow the app to run correctly. The project is built on PostgreSQL, so you will need to have PostgreSQL installed for the app to work. We recommend using Postico to run those queries as that was used to create the queries
-3. Open up your editor of choice (in this case, VS code) and run 'npm install'
+2. The queries in the database.sql file are set up to create all necessary tables and populate the needed data to allow the app to run correctly. The project is built on PostgreSQL, so you will need to have PostgreSQL installed for the app to work. Use Postico to run those queries, as that was used to create the queries.
+3. Open up your editor of choice (in this case, VS code) and run 'npm install', then 'npm install express'
 4. Run npm run server in your terminal
 5. Run npm run client in a second terminal
 6. The npm run client command will open up a new browser tab for you
@@ -24,9 +24,10 @@ Installation:
 Part 1 - Set up
 [] Create a database called weekend-to-do-app
 [] Create a router
+[] Create GET, POST, PUT, and DELETE routes
 
 Part 2 - Create React Components
-[] Create the following React components: Form (with submit button), ToDo Item, ToDo List
+[] Create the following React components: App, Form (with submit button), ToDo Item, ToDo List
 
 Part 3 - Append to the DOM
 [] Add React components to the DOM

@@ -1,7 +1,7 @@
 CREATE TABLE "tasklist" (
 	"id" SERIAL PRIMARY KEY,
 	"task" VARCHAR(200) NOT NULL,
-	"complete" BOOLEAN default false
+	"complete" BOOLEAN default false,
 );
 
 INSERT INTO "tasklist" ("task", "complete")
