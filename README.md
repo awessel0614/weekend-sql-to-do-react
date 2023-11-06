@@ -22,19 +22,19 @@ Installation:
 
 
 Part 1 - Set up
-[] Create a database called weekend-to-do-app
-[] Create a router
-[] Create GET, POST, PUT, and DELETE routes
+1. [x] Create a database called weekend-to-do-app
+2. [x] Create a router
+3. [x] Create GET, POST, PUT, and DELETE routes
 
 Part 2 - Create React Components
-[] Create the following React components: App, Form (with submit button), ToDo Item, ToDo List
+1. [x] Create the following React components: App, Form (with submit button), ToDo Item, ToDo List
 
 Part 3 - Append to the DOM
-[] Add React components to the DOM
+1. [x] Add React components to the DOM
 
 Part 4 - Styling and validation
-[] Add MUI elements for styling
-[] Add sweet alert to the delete button
+1. [x] Add MUI elements for styling
+2. [x] Add sweet alert to the delete button
 
 
 Additional README details can be found [here](https://github.com/PrimeAcademy/readme-template/blob/master/README.md).
