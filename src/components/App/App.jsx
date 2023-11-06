@@ -5,6 +5,8 @@ import './App.css';
 //import ToDoItem from '../ToDoItem/ToDoItem.jsx';
 import ToDoForm from '../ToDoForm/ToDoForm.jsx';
 import ToDoList from '../ToDoList/ToDoList.jsx';
+import Container from '@mui/material/Container';
+
 
 function App () {
   
@@ -29,13 +31,13 @@ useEffect(() => {
 
 
   return (
-    <div>
+    <Container maxWidth='lg'>
       <h1>To Do App</h1>
       <ToDoForm getToDoList={getToDoList}/>
       <main>
        <ToDoList getToDoList={getToDoList} toDoList={toDoList}/>
       </main>
-    </div>
+    </Container>
   );
 
 }

@@ -49,6 +49,13 @@ router.put('/:id', (req,res) => {
         });
 });
 
+// //PUT for editing the todo
+
+// router.put('/:id', (req, res) => {
+//     console.log('PUT edit /todo', req.params);
+//     const queryText = ``
+// })
+
 
 // DELETE
 

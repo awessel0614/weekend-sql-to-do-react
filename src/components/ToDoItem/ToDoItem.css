@@ -13,7 +13,7 @@
 }
 
 #complete-button {
-    height: 36px;
+    height: 39px;
     width: 100px;
     border-radius: 15px;
     color: rgb(107, 31, 31);
@@ -32,4 +32,8 @@
     font-size: large;
     background-color: #e18b6c;
     color: rgb(107, 31, 31);
+}
+
+h3 {
+    color: rgb(85, 81, 81);
 }
